@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  nav {
+    width: 100%;
+    box-shadow: 0px 0px 5px 3px silver;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+  }
+  
+  .nav_container {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    font-size: 11pt;
+    padding-right: 30px;
+  }
+  
+  nav li {
+    cursor: pointer;
+  }
+  
+  nav ul :first-child {
+    color: #064b88;
+  }
+  
+  nav img {
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .nav_contact {
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+  }
+  
+  nav p {
+    font-weight: medium;
+  }
+  
+  header {
+   width: 100%;
+    background: #f7f7f7;
+  }
+  
+  .header_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .header_slogan {
+    width: 400px
+  }
+
+  .logo_container {
+    width: 330px;
+    height: 400px;
+    background: url("./logo.png");
+    background-position: center;
+    
+  }
+  
+  .header_slogan h1 {
+    color: #064b88;
+    font-size: 30pt;
+    font-weight: 100;
+  }
+  
+  header p {
+    line-height: 1.5;
+    color: #454545;
+  }
+  
+  .process {
+    width: 100%;
+    height: 600px;
+    /*background: url(http://themes.framework-y.com/whitelabel/wp-content/uploads/2016/12/bg-1.jpg);*/
+  }
+  
+  .process_container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  span {
+    display: inline-block;
+  }
+  
+  .creditcard {
+    width: 300px;
+    height: 150px;
+    font-family: 'Roboto Mono', monospace;
+    border: solid #064b88 1px;
+    box-shadow: 5px 5px 10px 2px silver;
+  }
+  
+  .c_2 {
+    width: 100px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    padding-right: 10px;
+    color: #064b88;
+  }
+  
+  .c_2 p {
+    display: inline-block;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 8px
+  }
+  
+  .c_3 {
+    height: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: grey;
+  }
+  
+  .cc_no {
+    font-size: 14pt;
+  }
+  
+  .dates {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+  }
+  
+  .dates p {
+    margin: 0;
+  }
+  
+  .ccname {
+    width: 80%;
+  }
+  
+  
+  .process_info {
+    width: 500px;
+  }
+  
+  .process_info h3 {
+    color: #064b88;
+    font-size: 30pt;
+    font-weight: 100;
+  }
+  
+  .process_container p {
+    color: #454545;
+    line-height: 1.5;
+  }
+  
+  .testimonials {
+    height: 600px;
+    padding-top: 100px;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+    height: 200px;
+    margin: 20px 10px 20px 0;  
+    counter-increment: carousel-cell;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .carousel-cell p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 10pt;
+    color: #454545;
+  }
+  
+  .carousel-cell.is-selected {
+    background: white;
+  }
+  
+  .fa-star {
+    color: gold;
+    font-size: 20pt;
+  }
+  
+  .fa-quote-left {
+    font-size: 24pt;
+    color: #064b88;
+  }
+  
+  .guarantees {
+    width: 100%;
+    height: 600px;
+    background: #f7f7f7;
+  }
+  
+  .guarantee_container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .guarantee_container h3 {
+    color: #064b88;
+    font-size: 30pt;
+    font-weight: 100;
+  }
+  
+  .guarantee_container p {
+    color: #454545;
+    line-height: 1.5;
+  }
+  
+  .guarantee_child {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .social {
+    height: 200px;
+    /* background: url(http://themes.framework-y.com/whitelabel/wp-content/uploads/2016/12/bg-1.jpg); */
+    background-attachment: fixed;
+  }
+  
+  .social_container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contact {
+    width: 100%;
+    height: 600px;
+  }
