@@ -30,7 +30,16 @@
                 </div>
             </div>
         </nav>
-
+        <div class="nav_mobile_closed">
+            <ul>
+              <li>Home</li>
+              <li>Services</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+            
+          </div>
+         <img src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png" class="hamburger_menu"/>
         <header>
             <div class="header_container">
                 <div class="header_slogan">
@@ -180,24 +189,50 @@
                     <img src="https://img.icons8.com/ios/100/000000/linkedin-circled--v1.png"/>
                 </div>
             </article> -->
-            <article class="contact">
-                <div class="contact_container">
-                    <h3>Get in Touch</h3>
-                    <div class="contact_left">
-                        <label>Name</label><br>
-                        <input />
-                    </div>
-                    <div class="contact_right"></div>
-                        <label>Email</label><br>
-                        <input />
-                </div>
-                <div class="bottom">
-                    <label>Message</label><br>
-                    <textarea></textarea>
-                </div>
-            </article>
+            <article class="secondary_page">
+
+                <div class="contact_info">
+                  <h2 class="contact_info_head">FIND US</h2>
+                  
+                  <i class="fas fa-map-marked-alt"></i>
+                  <p>49 Patchogue Dr, Rocky Point, NY, 1178</p>
+                  <i class="fas fa-envelope"></i>
+                  <p><a href="mailto:info@oneinstallinc.com">info@bettercreditsolutions.com</a></p>
+                  <i class="fas fa-mobile"></i>
+                  <p><a href="tel:754-800-1663">(631) 680 3067</a></p>
+                  <div class="divider"></div>
+                  <ul class="contact_social_links">
+                    <li>
+                      <a href="https://www.instagram.com/oneinstallation/" target="_blank">
+                        <i class="fab fa-instagram"></i>          
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/ONEINSTALLATIONINC/" target="_blank">
+                        <i href="#" class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div> 
+                
+                
+                <form  action="POST" data-netlify="true">
+                  <h2>GET IN TOUCH</h2>
+                  <div class="name_container">
+                   <input type ="text" name="firstName" class="form_name" placeholder="First" required>
+                  <input type ="text" name="firstName" class="form_name" placeholder="Last" required>
+                  </div>
+                   <input name="email" type="email" class="form_email form_input" placeholder="E-mail" required>
+                   <textarea name="message" class="message form_input" rows="1" placeholder="Message"></textarea>
+                   <input type="submit" value="Submit" class="submit_btn">
+                   <div class="field">
+                    <div data-netlify-recaptcha="true"></div>
+                   </div>
+                </form>
+                </article>  
         </section>
         <footer></footer>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>
