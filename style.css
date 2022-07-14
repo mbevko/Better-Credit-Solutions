@@ -319,6 +319,7 @@ span {
 
     .process {
         margin-top: 100px;
+        height: auto;
     }
 
     .process_info {
