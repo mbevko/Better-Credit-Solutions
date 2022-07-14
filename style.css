@@ -369,6 +369,12 @@ span {
 }
 
 @media(max-width: 900px) {
+
+    .testimonials {
+        height: auto;
+        margin: 50px 0;
+    }
+
     .carousel-cell p {
         width: 100%;
         font-size: 12pt;
@@ -465,7 +471,7 @@ span {
 
 @media(max-width: 900px) {
     .secondary_page {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
     }
 }
