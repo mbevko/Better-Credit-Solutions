@@ -10,6 +10,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
+
 }
 
 nav {
@@ -218,7 +219,6 @@ header p {
     width: 60%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     height: 100%;
     align-items: center;
     justify-content: space-between;
@@ -294,6 +294,37 @@ span {
 .process_container p {
     color: #454545;
     line-height: 1.5;
+}
+
+@media (max-width: 1315px) {
+    .process_container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 915px) {
+    .process_container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .creditcard {
+        width: 330px;
+        height: 175px;
+    }
+
+    .c_3 {
+        height: 115px;
+    }
+
+    .process {
+        margin-top: 100px;
+    }
+
+    .process_info {
+        width: 100%;
+        margin-top: 50px;
+    }
 }
 
 .testimonials {
