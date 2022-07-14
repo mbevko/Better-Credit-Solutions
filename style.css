@@ -471,8 +471,16 @@ span {
 
 @media(max-width: 900px) {
     .secondary_page {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
+    }
+
+    .contact_info {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
     }
 }
 
