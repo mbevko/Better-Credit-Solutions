@@ -351,7 +351,6 @@ span {
 .carousel-cell p {
     width: 50%;
     margin: 0 auto;
-    font-size: 10pt;
     color: #454545;
 }
 
@@ -367,6 +366,18 @@ span {
 .fa-quote-left {
     font-size: 24pt;
     color: #064b88;
+}
+
+@media(max-width: 900px) {
+    .carousel-cell p {
+        width: 100%;
+        font-size: 12pt;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 300px;
+    }
 }
 
 .guarantees {
