@@ -94,6 +94,10 @@ nav p {
     cursor: pointer;
 }
 
+.nav_mobile li:first-child {
+    background: orange;
+}
+
 .hamburger_menu {
     opacity: 0;
     pointer-events: none;
@@ -153,7 +157,6 @@ header {
     width: 60%;
     height: 600px;
     margin: 0 auto;
-    flex-wrap: wrap-reverse;
 }
 
 .header_slogan {
@@ -177,6 +180,32 @@ header {
 header p {
     line-height: 1.5;
     color: #454545;
+}
+
+@media (max-width: 1315px) {
+    .header_container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    header {
+        width: 100%;
+    }
+
+    .header_container {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .header_slogan {
+        width: 90%;
+    }
+
 }
 
 .process {
