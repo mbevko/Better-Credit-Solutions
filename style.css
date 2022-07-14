@@ -319,7 +319,6 @@ span {
 
     .process {
         margin-top: 100px;
-        height: auto;
     }
 
     .process_info {
@@ -472,19 +471,8 @@ span {
 
 @media(max-width: 900px) {
     .secondary_page {
-        width: 100vw;
+        width: 100%;
         flex-direction: column;
-        justify-content: center;
-        align-items: space-around;
-        margin: 0;
-    }
-
-    .contact_info {
-        width: 70%;
-    }
-
-    form {
-        width: 70%;
     }
 }
 
