@@ -473,14 +473,17 @@ span {
     .secondary_page {
         width: 100%;
         flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        margin: 0;
     }
 
     .contact_info {
-        width: 90%;
+        width: 70%;
     }
 
     form {
-        width: 90%;
+        width: 70%;
     }
 }
 
