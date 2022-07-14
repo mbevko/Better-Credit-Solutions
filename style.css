@@ -411,6 +411,21 @@ span {
     text-align: center;
 }
 
+@media(max-width: 1550px) {
+    .guarantees {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    @media(max-width: 1000px){
+        .guarantee_container {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+}
+
 .social {
     height: 200px;
     
@@ -431,13 +446,28 @@ span {
 }
 
 .secondary_page {
-    height: 600px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   width: 60%;
   margin: auto;
   flex-wrap: wrap;
   align-items: center;
+  margin: 100px auto;
+}
+
+
+@media(max-width: 1550px) {
+    .secondary_page {
+        margin: 50px auto;
+    }
+}
+
+@media(max-width: 900px) {
+    .secondary_page {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .contact_info {
