@@ -1,8 +1,17 @@
 /* background: url(http://themes.framework-y.com/whitelabel/wp-content/uploads/2016/12/bg-1.jpg);
   background-attachment: fixed; */
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 * {
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #454545;
 }
 
 body {
@@ -41,7 +50,8 @@ nav ul {
 nav li {
     cursor: pointer;
 }
-nav li:first-child {
+
+.home_link {
     color: #064b88;
 }
 
@@ -71,7 +81,7 @@ nav p {
     position: absolute;
 }
 
-.nav_mobile ul {
+.nav_mobile .u-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,14 +94,25 @@ nav p {
     color: white;
 }
 
-.nav_mobile li {
+.nav_mobile a {
+    color: white;
+}
+
+.nav_mobile a {
     border-bottom: solid white 1px;
     width: 100%;
     padding: 20px 0;
     cursor: pointer;
 }
-.nav_mobile li:first-child {
+ .mobile_home_link {
     background: orange;
+}
+
+.modal_closed {
+    height: 0;
+    width: 0;
+    position: fixed;
+    pointer-events: none;
 }
 
 .hamburger_menu {
@@ -104,7 +125,7 @@ nav p {
     }
 }
 @media (max-width:1000px) {
-    nav ul {
+    nav .u-list {
         width: 250px;
         justify-content: space-between;
         padding: 0;
@@ -113,6 +134,13 @@ nav p {
 @media (max-width:850px) {
     nav {
         display: none;
+    }
+
+    .modal {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        pointer-events: all;
     }
 
     .nav_mobile {
@@ -126,7 +154,7 @@ nav p {
         transition: 0.5s;
         z-index: 100;
     }
-    .nav_mobile li:hover {
+    .nav_mobile a:hover {
         background: orange;
         transition: 0.1s;
     }
@@ -251,12 +279,13 @@ span {
 }
 
 .c_3 {
-    height: 99px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: grey;
+    
 }
 
 .cc_no {
@@ -310,7 +339,7 @@ span {
     }
 
     .c_3 {
-        height: 115px;
+        height: 140px;
     }
 
     .process {
